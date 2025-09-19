@@ -2,7 +2,7 @@ using UnityEngine;
 
 using UnityEngine.UIElements;
 
-public class EnemieFollowing : MonoBehaviour
+public class perseguição: MonoBehaviour
 
 {
 
