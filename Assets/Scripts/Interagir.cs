@@ -3,27 +3,31 @@ using UnityEngine;
 public class Interagir : MonoBehaviour
 
 {
-
+    Found1 found;
 
     public Transform interactionPoint;
     public float interactionRadius = 0.5f;
-    public LayerMask interactable;
+    public LayerMask interactableLayer;
+
     private void Start()
     {
-        
+        found = FindAnyObjectByType(typeof(Found1)) as Found1;
     }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Collider2D hit = Physics2D.OverlapCircle(interactionPoint.position, interactionRadius, interactable);
+            Debug.Log("interagiu1");
+            Collider2D hit = Physics2D.OverlapCircle(interactionPoint.position, interactionRadius, interactableLayer);
             if (hit != null)
             {
-                found foun = hit.GetComponent<found>();
-                if (hit.CompareTag("Gasolina") && foun != null)
+                Debug.Log("interagiu2");
+              
+                if(found != null)
                 {
-                    Debug.Log("interagiu");
-                    foun.Encontrar();
+                    Debug.Log("interagiu3");
+                    found.Encontrar();
+                    Destroy(hit.gameObject);
                 }
             }
         }

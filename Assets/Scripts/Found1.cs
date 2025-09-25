@@ -1,7 +1,8 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
-public class found: MonoBehaviour
+
+public class Found1 : MonoBehaviour
 {
     int encontrado;
     [SerializeField] TMP_Text texto;
@@ -17,3 +18,4 @@ public class found: MonoBehaviour
         encontrado++;
     }
 }
+

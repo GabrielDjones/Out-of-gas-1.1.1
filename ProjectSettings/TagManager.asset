@@ -5,8 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Chao
-  - Item
   - Gasolina
+  - Item
   layers:
   - Default
   - TransparentFX
