@@ -1,46 +1,42 @@
 using UnityEngine;
 
 public class Interagir : MonoBehaviour
-{
-    public float interactRange = 2f;
-    public LayerMask interactableLayer; 
 
+{
+
+
+    public Transform interactionPoint;
+    public float interactionRadius = 0.5f;
+    public LayerMask interactable;
+    private void Start()
+    {
+        
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Interact();
-        }
-    }
-
-    void Interact()
-    {
-
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, interactRange, interactableLayer);
-
-        foreach (Collider2D hit in hits)
-        {
-           
-            IInteractable interactable = hit.GetComponent<IInteractable>();
-            if (interactable != null)
+            Collider2D hit = Physics2D.OverlapCircle(interactionPoint.position, interactionRadius, interactable);
+            if (hit != null)
             {
-                interactable.Interact(); 
-                break; 
+                found foun = hit.GetComponent<found>();
+                if (hit.CompareTag("Gasolina") && foun != null)
+                {
+                    Debug.Log("interagiu");
+                    foun.Encontrar();
+                }
             }
         }
     }
 
-
     void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, interactRange);
+        if (interactionPoint != null)
+        {
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawWireSphere(interactionPoint.position, interactionRadius);
+        }
     }
-
-    public interface IInteractable
-    {
-        void Interact();
-    }
-
 }
+
 
