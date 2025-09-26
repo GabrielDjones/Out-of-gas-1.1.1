@@ -972,7 +972,7 @@ GameObject:
   - component: {fileID: 182679070}
   - component: {fileID: 182679071}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Fundo 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -987,11 +987,11 @@ Transform:
   m_GameObject: {fileID: 182679069}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5427, y: 1.044, z: 0}
+  m_LocalPosition: {x: -5.565692, y: 0.36127317, z: 0.22820088}
   m_LocalScale: {x: 69.581245, y: 47.6426, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 928876773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &182679071
 SpriteRenderer:
@@ -2045,7 +2045,7 @@ GameObject:
   - component: {fileID: 324851933}
   - component: {fileID: 324851934}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: Borda 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2060,11 +2060,11 @@ Transform:
   m_GameObject: {fileID: 324851931}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.0206, y: 1.6546, z: 0}
+  m_LocalPosition: {x: -36.12899, y: 0.97187316, z: 0.22820088}
   m_LocalScale: {x: 10.125164, y: 53.177265, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 928876773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &324851933
 SpriteRenderer:
@@ -3573,6 +3573,43 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.33148092, y: 0.52073115}
   m_EdgeRadius: 0
+--- !u!1 &928876772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 928876773}
+  m_Layer: 0
+  m_Name: Fundo/Bordas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &928876773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928876772}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.108392, y: 0.68272686, z: -0.22820088}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1201903375}
+  - {fileID: 324851932}
+  - {fileID: 1218486379}
+  - {fileID: 1449214586}
+  - {fileID: 958244569}
+  - {fileID: 182679070}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &958244568
 GameObject:
   m_ObjectHideFlags: 0
@@ -3584,7 +3621,7 @@ GameObject:
   - component: {fileID: 958244569}
   - component: {fileID: 958244570}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Fundo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3599,11 +3636,11 @@ Transform:
   m_GameObject: {fileID: 958244568}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0456, y: 1.0418, z: 0}
+  m_LocalPosition: {x: -6.062792, y: 0.35907316, z: 0.22820088}
   m_LocalScale: {x: 74.327995, y: 50.488285, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 928876773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &958244570
 SpriteRenderer:
@@ -4078,7 +4115,7 @@ GameObject:
   - component: {fileID: 1201903376}
   - component: {fileID: 1201903377}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Borda 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4093,11 +4130,11 @@ Transform:
   m_GameObject: {fileID: 1201903374}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8268, y: -18.7791, z: 0}
+  m_LocalPosition: {x: -8.935192, y: -19.461826, z: 0.22820088}
   m_LocalScale: {x: 54.519375, y: 10.12828, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 928876773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1201903376
 SpriteRenderer:
@@ -4346,7 +4383,7 @@ GameObject:
   - component: {fileID: 1218486380}
   - component: {fileID: 1218486381}
   m_Layer: 0
-  m_Name: Square (3)
+  m_Name: Borda 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4361,11 +4398,11 @@ Transform:
   m_GameObject: {fileID: 1218486378}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.2155, y: 1.9955, z: 0}
+  m_LocalPosition: {x: 24.10711, y: 1.3127731, z: 0.22820088}
   m_LocalScale: {x: 12.009997, y: 52.570877, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 928876773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1218486380
 SpriteRenderer:
@@ -5330,7 +5367,7 @@ GameObject:
   - component: {fileID: 1449214587}
   - component: {fileID: 1449214588}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Borda 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5345,11 +5382,11 @@ Transform:
   m_GameObject: {fileID: 1449214585}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5648396, y: 23.1856, z: 0}
+  m_LocalPosition: {x: -6.5435524, y: 22.502872, z: 0.22820088}
   m_LocalScale: {x: 49.73488, y: 10.53457, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 928876773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1449214587
 SpriteRenderer:
@@ -5609,7 +5646,7 @@ GameObject:
   - component: {fileID: 1506828004}
   - component: {fileID: 1506828006}
   m_Layer: 0
-  m_Name: Red_CIVIC_CLEAN_All_004_0
+  m_Name: Carro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5988,8 +6025,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3832d127c5fdc114692b5d55ccb8c619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactRange: 2
-  interactableLayer:
+  interactionPoint: {fileID: 0}
+  interactionRadius: 0.5
+  interactable:
     serializedVersion: 2
     m_Bits: 0
 --- !u!50 &1568638616
@@ -8041,10 +8079,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3832d127c5fdc114692b5d55ccb8c619, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactRange: 1
-  interactableLayer:
+  interactionPoint: {fileID: 0}
+  interactionRadius: 0.5
+  interactable:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
 --- !u!114 &2098973645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8492,11 +8531,6 @@ SceneRoots:
   - {fileID: 3887383016145322374}
   - {fileID: 1904311250}
   - {fileID: 1506828005}
-  - {fileID: 1201903375}
-  - {fileID: 324851932}
-  - {fileID: 1218486379}
-  - {fileID: 1449214586}
-  - {fileID: 958244569}
-  - {fileID: 182679070}
   - {fileID: 2003287157}
   - {fileID: 88653130}
+  - {fileID: 928876773}

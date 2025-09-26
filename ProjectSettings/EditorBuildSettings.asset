@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 0f878aa157e0f48478037b86e1d525bf
   - enabled: 1
-    path: Assets/Calebe/JogoPrincipal.unity
+    path: Assets/Scenes/JogoPrincipal.unity
     guid: c83276a9e5ed8a14c8c2b952cb4071db
   - enabled: 1
     path: Assets/Scenes/Fim.unity
