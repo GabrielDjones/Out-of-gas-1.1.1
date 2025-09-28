@@ -8,6 +8,9 @@ TagManager:
   - Gasolina
   - Item
   - Carro
+  - Enemy
+  - Despawn
+  - HiddenPlace
   layers:
   - Default
   - TransparentFX

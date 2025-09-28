@@ -9,23 +9,21 @@ public class Interagir : MonoBehaviour
     public float interactionRadius = 0.5f;
     public LayerMask interactableLayer;
 
+    GasAnimation gas;
     private void Start()
     {
         found = FindAnyObjectByType(typeof(Found1)) as Found1;
+        gas = FindAnyObjectByType(typeof (GasAnimation)) as GasAnimation;
     }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log("interagiu1");
             Collider2D hit = Physics2D.OverlapCircle(interactionPoint.position, interactionRadius, interactableLayer);
             if (hit != null)
             {
-                Debug.Log("interagiu2");
-              
-                if(found != null)
+                if (found != null)
                 {
-                    Debug.Log("interagiu3");
                     found.Encontrar();
                     Destroy(hit.gameObject);
                 }
