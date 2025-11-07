@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 950e94a7f658cff4192a21c8c707fe71
+guid: 8843869a8cea95d4191f9f833b845474
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3369390543426049443
-    second: image (4)_0
+      213: 5132381225605563044
+    second: lixxooooooooo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +96,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image (4)_0
+      name: lixxooooooooo_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 4
-        width: 175
-        height: 136
+        x: 4
+        y: 3
+        width: 25
+        height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5aa78d07258d31d0800000000000000
-      internalID: -3369390543426049443
+      spriteID: 4a28a1c3881e93740800000000000000
+      internalID: 5132381225605563044
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9e04f65158989ae4e9c0655809b33034
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      image (4)_0: -3369390543426049443
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

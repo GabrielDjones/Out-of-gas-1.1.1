@@ -1,28 +1,45 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class Hiding : MonoBehaviour
 {
-    public bool podeseesconder= false;
-    public bool escondido = false;
-    private Renderer playerRenderer;
-    private MovimentoTopDown movimentoJogador;
+    [SerializeField] private GameObject player;
+    [SerializeField] private HideManagement hideManager;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        playerRenderer = GetComponent<Renderer>();
-        movimentoJogador = GetComponent <MovimentoTopDown>();
-    }
+    private bool inRange = false;
 
-    // Update is called once per frame
     void Update()
     {
-        if (podeseesconder && Input.GetKeyDown(KeyCode.E))
+        // Só pode se esconder se o player estiver no range e ativo
+        if (Input.GetKeyDown(KeyCode.E) && inRange && player.activeSelf)
         {
-            escondido = !escondido;
-
-            playerRenderer.enabled = !escondido;
+            player.SetActive(false);
+            hideManager.EnterHiding();
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("HiddenPlace"))
+        {
+            Debug.Log("Entrou na área de esconderijo");
+            inRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("HiddenPlace"))
+        {
+            Debug.Log("Saiu da área de esconderijo");
+            inRange = false;
+
+            // Se estava escondido, força a saída
+            hideManager.ForceExit();
+        }
+    }
+
+    public void ResetRange()
+    {
+        inRange = false;
     }
 }
