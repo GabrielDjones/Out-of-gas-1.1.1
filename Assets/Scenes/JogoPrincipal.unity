@@ -4023,6 +4023,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texto: {fileID: 984892086}
   sceneName: Fim
+--- !u!114 &604813729 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5194417879859122757, guid: b4e2dc96f44943646960257985593ef7, type: 3}
+  m_PrefabInstance: {fileID: 3887383016145322374}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604813717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a0e7c7dd4f43347afabf4c7fb77845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &611499640
 GameObject:
   m_ObjectHideFlags: 0
@@ -9710,7 +9721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 604813717}
-  hidingScript: {fileID: 0}
+  hidingScript: {fileID: 604813729}
 --- !u!1 &1568719899
 GameObject:
   m_ObjectHideFlags: 0
