@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - Despawn
   - HiddenPlace
+  - Block
   layers:
   - Default
   - TransparentFX
