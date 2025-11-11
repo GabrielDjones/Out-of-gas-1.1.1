@@ -570,9 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockCode
   block: {fileID: 387250676}
-  canBlock: 1
-  blockTime: 0
-  maxBlockTime: 2.5
+  BlockTime: 0
 --- !u!1 &1283163718
 GameObject:
   m_ObjectHideFlags: 0

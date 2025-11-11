@@ -16,13 +16,15 @@ public class dash : MonoBehaviour
 
     private float chargeTime = 0f;
     private Rigidbody2D rb;
+    private BlockCode block;
     private Vector2 dashDirection;
     private float originalGravity;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        originalGravity = rb.gravityScale; 
+        originalGravity = rb.gravityScale;
+        block = FindAnyObjectByType(typeof(BlockCode)) as BlockCode;
     }
 
     void Update()
@@ -34,6 +36,7 @@ public class dash : MonoBehaviour
             chargeTime = 0f;
             rb.gravityScale = 0.2f; 
             rb.linearVelocity = Vector2.zero;
+            block.canBlock = false;
         }
 
         // Enquanto estiver segurando o botão, acumula o tempo de carga
@@ -53,6 +56,7 @@ public class dash : MonoBehaviour
 
             isCharging = false;
             chargeTime = 0f;
+            block.canBlock = true;
         }
     }
 
