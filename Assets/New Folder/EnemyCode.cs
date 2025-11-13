@@ -19,7 +19,9 @@ public class EnemyCode : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             dashManager.canDash = true;
+            dashManager.StartCoroutine(DashCoroutine(dashForce))
             Destroy(gameObject);
+
         }
     }
 }

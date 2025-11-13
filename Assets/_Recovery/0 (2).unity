@@ -570,7 +570,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockCode
   block: {fileID: 387250676}
-  BlockTime: 0
+  redColorTimer: 1.15
+  canBlock: 1
+  blockTime: 0
+  maxBlockTime: 1.9
+  blockCooldown: 2
+  corInicial: {r: 0, g: 1, b: 0, a: 1}
+  corFinal: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1283163718
 GameObject:
   m_ObjectHideFlags: 0

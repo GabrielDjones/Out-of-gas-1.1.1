@@ -4,11 +4,11 @@ using System.Collections;
 public class dash : MonoBehaviour
 {
     [Header("Dash Settings")]
-    public float minDashForce = 10f;     // Força mínima do dash
-    public float maxDashForce = 40f;     // Força máxima do dash
-    public float maxChargeTime = 2f;     // Tempo máximo para carregar o dash
-    public float dashDuration = 0.15f;   // Duração do dash
-    public float dashCooldown = 1f;      // Tempo de recarga entre dashes
+    public float minDashForce = 10f;    
+    public float maxDashForce = 40f;    
+    public float maxChargeTime = 2f;    
+    public float dashDuration = 0.15f;   
+    public float dashCooldown = 1f;    
 
     private bool isDashing = false;
     public bool canDash = true;
