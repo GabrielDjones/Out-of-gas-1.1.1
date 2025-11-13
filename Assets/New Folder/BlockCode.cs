@@ -36,6 +36,7 @@ public class BlockCode : MonoBehaviour
 
     void Update()
     {
+
         // Atualiza o cooldown, caso esteja ativo
         if (!canBlock)
         {

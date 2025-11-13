@@ -12,6 +12,9 @@ TagManager:
   - Despawn
   - HiddenPlace
   - Block
+  - BulletPlayer
+  - BulletEnemy
+  - Espinho
   layers:
   - Default
   - TransparentFX

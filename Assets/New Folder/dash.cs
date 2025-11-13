@@ -60,6 +60,7 @@ public class dash : MonoBehaviour
         }
     }
 
+    
     private IEnumerator DashCoroutine(float dashForce)
     {
         isDashing = true;
@@ -85,5 +86,9 @@ public class dash : MonoBehaviour
         // Espera o cooldown antes de poder usar novamente
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+    }
+    public void EnemyKill(float dashForce)
+    {
+        StartCoroutine(DashCoroutine(dashForce));
     }
 }
